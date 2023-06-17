@@ -53,7 +53,7 @@ nav div div img {
   font-weight: 400;
 }
 .slider {
-  background: url(./bgfons.com\ -\ stone_texture152.jpg);
+  background: url(./background_css.jpg);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 41% 86%, 0 75%);
   overflow: hidden;
   height: 120vh;
