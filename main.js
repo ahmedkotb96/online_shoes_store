@@ -39,11 +39,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "/E-commerce_website/Air_Maxx_SC_Sneakers_removebg.PNG",
+        img: "./Air_Maxx_SC_Sneakers_removebg.PNG",
       },
       {
         code: "blue",
-        img: "/E-commerce_website/Air_Max_SC_Sneakers_blue_removebg.PNG",
+        img: "./Air_Max_SC_Sneakers_blue_removebg.PNG",
       },
     ],
   },
@@ -54,11 +54,11 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "/E-commerce_website/Renew_Elevate_III_Basketball_Shoes_removebg.PNG",
+        img: "./Renew_Elevate_III_Basketball_Shoes_removebg.PNG",
       },
       {
         code: "red",
-        img: "/E-commerce_website/Elevate_red_removebg.PNG",
+        img: "./Elevate_red_removebg.PNG",
       },
     ],
   },
@@ -69,11 +69,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "/E-commerce_website/Tanjun_Sustainable_Sneakers-removebg.PNG",
+        img: "./Tanjun_Sustainable_Sneakers-removebg.PNG",
       },
       {
         code: "white",
-        img: "/E-commerce_website/Tunjan_white_removebg.PNG",
+        img: "./Tunjan_white_removebg.PNG",
       },
     ],
   },
