@@ -24,7 +24,7 @@ const products = [
     colors: [
       {
         code: "white",
-        img: "Air_Max_Impact_4_Basketball_removebg.PNG",
+        img: "Air_Max_Impact_white.PNG.PNG",
       },
       {
         code: "black",
