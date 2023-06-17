@@ -24,11 +24,11 @@ const products = [
     colors: [
       {
         code: "white",
-        img: "/E-commerce_website/Air_Max_Impact_4_Basketball_removebg.PNG",
+        img: "./E-commerce_website/Air_Max_Impact_4_Basketball_removebg.PNG",
       },
       {
         code: "black",
-        img: "/E-commerce_website/Impact_black_removebg.PNG",
+        img: "./E-commerce_website/Impact_black_removebg.PNG",
       },
     ],
   },
