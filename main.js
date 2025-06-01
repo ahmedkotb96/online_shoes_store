@@ -322,4 +322,49 @@ document.addEventListener('click', (e) => {
         searchResults.style.display = 'none';
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.slidderWrapper');
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let isDragging = false;
+    let currentIndex = 0;
+    const slideCount = document.querySelectorAll('.sliderItem').length;
+
+    wrapper.addEventListener('touchstart', touchStart);
+    wrapper.addEventListener('touchmove', touchMove);
+    wrapper.addEventListener('touchend', touchEnd);
+
+    function touchStart(event) {
+        startX = event.touches[0].clientX;
+        isDragging = true;
+        wrapper.style.transition = 'none';
+    }
+
+    function touchMove(event) {
+        if (!isDragging) return;
+        const currentX = event.touches[0].clientX;
+        const diff = currentX - startX;
+        const moveAmount = prevTranslate + diff;
+        wrapper.style.transform = `translateX(${moveAmount}px)`;
+    }
+
+    function touchEnd(event) {
+        isDragging = false;
+        wrapper.style.transition = 'transform 0.3s ease-in-out';
+        
+        const movedBy = event.changedTouches[0].clientX - startX;
+        
+        if (Math.abs(movedBy) > 100) { // threshold for slide change
+            if (movedBy > 0 && currentIndex > 0) {
+                currentIndex--;
+            } else if (movedBy < 0 && currentIndex < slideCount - 1) {
+                currentIndex++;
+            }
+        }
+        
+        prevTranslate = -currentIndex * window.innerWidth;
+        wrapper.style.transform = `translateX(${prevTranslate}px)`;
+    }
+});
 
